@@ -1,0 +1,9 @@
+.grid-col-2-tablet .grid-item {
+    width: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+}
+
+.grid-col-1-mobile .grid-item {
+    width: calc(100% - 15px);
+    max-width: calc(100% - 15px);
+}
