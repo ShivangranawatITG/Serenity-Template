@@ -82,4 +82,16 @@
     .insta-feed-heading h2 {
         font-size: 18px;
     }
+
+    .scrolling-with-image-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .scrolling-image-text-wrapper {
+        width: 100%;
+    }
+
+    .scrolling-image-media-wrapper {
+        width: 100%;
+    }
 }

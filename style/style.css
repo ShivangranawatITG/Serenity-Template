@@ -148,6 +148,7 @@ body {
     opacity: 1;
     padding: 13px 36px;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 .secondary-button {
@@ -157,6 +158,18 @@ body {
     font-weight: 500;
     font-size: 16px;
     text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.primary-button:hover {
+    background: #E9F6FB;
+    color: #000;
+    box-shadow: 1px 1px 10px 1px;
+}
+
+.secondary-button:hover {
+    color: red;
+    border-bottom: 1px solid red;
 }
 
 .tertiary-button {
@@ -372,7 +385,7 @@ header {
 
 .quick-buy-button {
     position: absolute;
-    left: 17%;
+    left: 25%;
     z-index: -1;
     bottom: 3%;
     font-family: var(--font-family-primary);
@@ -382,7 +395,7 @@ header {
     background-color: transparent;
     color: #000;
     opacity: 1;
-    padding: 13px 80px;
+    padding: 13px 40px;
     border: 1px solid gray;
     border-radius: 5px;
 }
@@ -749,10 +762,6 @@ option {
     display: flex;
     gap: 20px;
 }
-
-
-
-
 
 .featured-collection-inner-flex:hover .quick-buy-button {
     z-index: 1;
