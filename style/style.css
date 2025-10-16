@@ -22,7 +22,7 @@ a {
 
 @font-face {
     font-family: 'Americana Font';
-    src: url(./fonts/americana-font-regular_Vlavq/Americana\ Font\ Regular);
+    src: url(../fonts/americanabt_roman.ttf);
 }
 
 :root {
@@ -118,8 +118,8 @@ a {
 }
 
 .grid-col-6-desktop .grid-item {
-    width: calc(16% - 0);
-    max-width: calc(16% - 0);
+    width: calc(16% - 25px);
+    max-width: calc(16% - 25px);
 }
 
 .primary-button {
@@ -221,7 +221,7 @@ header {
 
 .banner-text-wrapper {
     display: flex;
-    max-width: 500px;
+    max-width: 420px;
     flex-direction: column;
     gap: 30px;
     position: absolute;
@@ -343,14 +343,13 @@ header {
 }
 
 /* -- Image-with-text -- */
-/* .image-with-text {
+.image-with-text {
     padding: var(--padding-primary);
 }
 
 .image-with-text-inner {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 330px;
 }
 
@@ -385,7 +384,7 @@ header {
     flex-direction: column;
     max-width: 610px;
     gap: 20px;
-} */
+}
 
 /* -- Insta-feed -- */
 .insta-feed {
@@ -429,7 +428,7 @@ header {
     align-items: center;
 }
 
-.contact-us-heading,
+.contact-us-heading h2,
 .insta-feed-heading h2 {
     font-family: var(--font-family-secondary);
     font-weight: 500;
