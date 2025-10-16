@@ -22,7 +22,7 @@ a {
 
 @font-face {
     font-family: 'Americana Font';
-    src: url(../fonts/americana-font-regular_Vlavq/Americana\ Font\ Regular);
+    src: url(./fonts/americana-font-regular_Vlavq/Americana\ Font\ Regular);
 }
 
 :root {
