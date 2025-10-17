@@ -1,3 +1,19 @@
+@media (max-width: 1500px) {
+    .image-with-text-inner {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .review-slider-button {
+        display: none;
+    }
+
+    .image-with-text-inner {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 1200px) {
     .navigation-links {
         display: none;
@@ -52,6 +68,15 @@
 
     .banner-text-wrapper-content {
         top: 5%;
+    }
+
+    .image-with-text-media-first {
+        position: sticky;
+    }
+
+    .image-with-text-media-first img,
+    .image-with-text-media-second img {
+        width: 100%;
     }
 
 }

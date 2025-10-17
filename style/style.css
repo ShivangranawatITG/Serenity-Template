@@ -336,10 +336,19 @@ header {
     gap: 10px;
 }
 
+.collection-list-products-inner:hover .collection-list-products-media img {
+    transform: scale(1.2);
+}
+
+.collection-list-products-media {
+    overflow: hidden;
+}
+
 .collection-list-products-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 1s;
     gap: 15px;
     background-color: #F9F9F9;
     border-radius: 5px;
@@ -525,6 +534,14 @@ header {
     max-width: 630px;
 }
 
+.image-media:hover {
+    transform: scale(1.1);
+}
+
+.image-media {
+    transition: 0.3s;
+}
+
 .image-with-text-heading {
     max-width: 500px;
 }
@@ -568,6 +585,14 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.review-media:hover {
+    transform: scale(1.05);
+}
+
+.review-media {
+    transition: 0.3s;
 }
 
 .left-right-sign {
@@ -628,7 +653,12 @@ header {
 .blog-wrapper-inner {
     display: flex;
     flex-direction: column;
+    transition: 0.3s;
     gap: 10px;
+}
+
+.blog-wrapper-inner:hover {
+    transform: scale(1.05);
 }
 
 /* -- Insta-feed -- */
@@ -654,6 +684,14 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+}
+
+.insta-feed-media {
+    transition: 0.3s;
+}
+
+.insta-feed-media:hover {
+    transform: scale(1.1);
 }
 
 /* -- Contact-us -- */
