@@ -15,15 +15,15 @@ var swiper = new Swiper(".mySwiper2", {
     breakpoints: {
         640: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 10,
         },
         768: {
             slidesPerView: 3,
-            spaceBetween: 40,
+            spaceBetween: 20,
         },
         1024: {
             slidesPerView: 4,
-            spaceBetween: 50,
+            spaceBetween: 30,
         },
     },
 });
@@ -39,15 +39,15 @@ var swiper = new Swiper(".mySwiper3", {
     breakpoints: {
         640: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 10,
         },
         768: {
             slidesPerView: 3,
-            spaceBetween: 40,
+            spaceBetween: 20,
         },
         1024: {
             slidesPerView: 4,
-            spaceBetween: 50,
+            spaceBetween: 30,
         },
     },
 });
@@ -64,15 +64,15 @@ var swiper = new Swiper(".mySwiper4", {
     breakpoints: {
         640: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 10,
         },
         768: {
             slidesPerView: 1,
-            spaceBetween: 40,
+            spaceBetween: 20,
         },
         1024: {
             slidesPerView: 1,
-            spaceBetween: 50,
+            spaceBetween: 30,
         },
     },
 });

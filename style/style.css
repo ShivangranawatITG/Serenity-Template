@@ -48,8 +48,6 @@ body {
     --color-text: #FFFFFF;
     --button-background: #FFFFFF;
     --button-text-color: #000309;
-    --button-hover-background: ;
-    --button-hover-text-color: ;
 }
 
 .color-scheme-2 {
@@ -57,8 +55,6 @@ body {
     --color-text: #000309;
     --button-background: #26A3DB;
     --button-text-color: #FFFFFF;
-    --button-hover-background: ;
-    --button-hover-text-color: ;
 }
 
 .color-scheme-3 {
@@ -66,8 +62,6 @@ body {
     --color-text: #000309;
     --button-background: #26A3DB;
     --button-text-color: #FFFFFF;
-    --button-hover-background: ;
-    --button-hover-text-color: ;
 }
 
 .heading {
@@ -242,6 +236,11 @@ header {
     color: #FFFFFF;
     font-weight: 500;
     font-size: 14px;
+    transition: 0.3s;
+}
+
+.navigation-links a:hover {
+    color: #26A3DB;
 }
 
 /* -- Banner-section -- */
@@ -261,7 +260,7 @@ header {
     flex-direction: column;
     gap: 30px;
     position: absolute;
-    top: 30%;
+    top: 40%;
 }
 
 .banner-text-wrapper-content {
