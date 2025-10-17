@@ -107,6 +107,13 @@ body {
     justify-content: space-between;
 }
 
+.grid2 {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-between;
+}
+
 .grid-col-4-desktop .grid-item {
     width: calc(25% - 30px);
     max-width: calc(25% - 30px);
@@ -119,8 +126,8 @@ body {
 
 
 .grid-col-2-desktop .grid-item {
-    width: calc(50% - 80px);
-    max-width: calc(50% - 80px);
+    width: calc(50% - 0px);
+    max-width: calc(50% - 0px);
 }
 
 .grid-col-4-desktop__footer .grid-item {
@@ -379,7 +386,7 @@ header {
 
 .heading-with-slider-sign {
     position: relative;
-    width: 30%;
+    width: 430px;
     margin: auto;
 }
 
@@ -527,6 +534,10 @@ header {
     padding: var(--padding-primary);
 }
 
+.review-wrapper {
+    position: relative;
+}
+
 .review-content h4 {
     font-family: var(--font-family-secondary);
     font-weight: 500;
@@ -590,12 +601,28 @@ header {
     font-family: var(--font-family-secondary);
     font-weight: 500;
     font-size: 18px;
+    color: #000000;
 }
 
 .blog-content {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.after-border {
+    position: relative;
+}
+
+.after-border::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -30px;
+    display: inline-block;
+    background: #D2D5D9;
+    width: 1px;
+    height: 100%;
 }
 
 .blog-wrapper-inner {
