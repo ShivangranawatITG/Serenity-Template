@@ -1,4 +1,4 @@
-
+// Slider
 var swiper = new Swiper(".mySwiper", {
     pagination: {
         el: ".swiper-pagination",
@@ -77,6 +77,7 @@ var swiper = new Swiper(".mySwiper4", {
     },
 });
 
+// Pop-up
 document.addEventListener('DOMContentLoaded', (e) => {
     e.preventDefault();
     const ageVerification = document.getElementById('age-verification');
