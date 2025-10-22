@@ -79,7 +79,7 @@ var swiper = new Swiper(".mySwiper4", {
 
 // Pop-up
 document.addEventListener('DOMContentLoaded', (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const ageVerification = document.getElementById('age-verification');
     const notEligible = document.getElementById('not-eligible');
     const welcome = document.getElementById('welcome');
