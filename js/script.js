@@ -74,7 +74,7 @@ var swiper = new Swiper(".mySwiper4", {
 });
 
 // Pop-up
-document.addEventListener('DOMContentLoaded', (e) => {
+document.addEventListener('DOMContentLoaded', () => {
     const ageVerification = document.getElementById('age-verification');
     const notEligible = document.getElementById('not-eligible');
     const welcome = document.getElementById('welcome');
