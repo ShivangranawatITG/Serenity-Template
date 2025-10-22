@@ -76,3 +76,8 @@ var swiper = new Swiper(".mySwiper4", {
         },
     },
 });
+
+
+setTimeout(() => {
+    alert('Welcome to our Website')
+}, 5000);

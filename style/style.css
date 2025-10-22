@@ -343,6 +343,10 @@ header {
     overflow: hidden;
 }
 
+.collection-list-products-media img {
+    transition: 0.3s;
+}
+
 .collection-list-products-inner {
     display: flex;
     flex-direction: column;
