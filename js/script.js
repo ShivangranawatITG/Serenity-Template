@@ -77,7 +77,31 @@ var swiper = new Swiper(".mySwiper4", {
     },
 });
 
+document.addEventListener('DOMContentLoaded', (e) => {
+    e.preventDefault();
+    const ageVerification = document.getElementById('age-verification');
+    const notEligible = document.getElementById('not-eligible');
+    const welcome = document.getElementById('welcome');
+    const input = document.getElementById('age-field');
+    const submit = document.getElementById('submit');
+    const hasVerified = localStorage.getItem('ageVerified');
 
-setTimeout(() => {
-    alert('Welcome to our Website')
-}, 5000);
+    if (!hasVerified) {
+        ageVerification.style.display = 'flex';
+    }
+
+    submit.addEventListener('click', () => {
+        if (input.value < 18 || input.value > 100) {
+            notEligible.style.display = 'flex';
+            ageVerification.style.display = 'none';
+        }
+        else {
+            localStorage.setItem('ageVerified', 'true');
+            ageVerification.style.display = 'none';
+            welcome.style.display = 'flex';
+            setTimeout(() => {
+                welcome.style.display = 'none';
+            }, 2000);
+        }
+    });
+});
