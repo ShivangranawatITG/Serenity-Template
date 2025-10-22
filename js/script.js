@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
             welcome.style.display = 'flex';
             setTimeout(() => {
                 welcome.style.display = 'none';
-            }, 2000);
+            }, 5000);
         }
     });
 });
