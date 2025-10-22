@@ -8,10 +8,6 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 1,
     spaceBetween: 10,
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    // },
     breakpoints: {
         640: {
             slidesPerView: 2,
@@ -79,7 +75,6 @@ var swiper = new Swiper(".mySwiper4", {
 
 // Pop-up
 document.addEventListener('DOMContentLoaded', (e) => {
-    // e.preventDefault();
     const ageVerification = document.getElementById('age-verification');
     const notEligible = document.getElementById('not-eligible');
     const welcome = document.getElementById('welcome');
@@ -89,6 +84,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     if (!hasVerified) {
         ageVerification.style.display = 'flex';
+        document.body.style.overflow = 'hidden'
     }
 
     submit.addEventListener('click', () => {
@@ -103,6 +99,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
             setTimeout(() => {
                 welcome.style.display = 'none';
             }, 4000);
+            document.body.style.overflow = 'visible'
         }
     });
 });
