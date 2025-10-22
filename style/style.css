@@ -66,7 +66,7 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 50;
 }
 
 .age-verification-content {
@@ -85,7 +85,14 @@ body {
     margin-bottom: 20px;
 }
 
+.pop-up-logo {
+    margin-bottom: 20px;
+}
+
 .age-verification-field form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     margin-top: 20px;
 }
 
@@ -94,9 +101,9 @@ body {
     border-radius: 5px;
 }
 
-.age-verification-field #submit:hover {
+/* .age-verification-field #submit:hover {
     opacity: 0.8;
-}
+} */
 
 .welcome-content,
 .not-eligible-content {

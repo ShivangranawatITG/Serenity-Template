@@ -74,6 +74,10 @@
         position: sticky;
     }
 
+    .image-with-text-inner {
+        gap: 50px;
+    }
+
     .image-with-text-media-first img,
     .image-with-text-media-second img {
         width: 100%;
