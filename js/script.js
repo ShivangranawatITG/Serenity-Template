@@ -74,12 +74,12 @@ var swiper = new Swiper(".mySwiper4", {
 });
 
 // Pop-up
-document.addEventListener('DOMContentLoaded', (e) => {
+document.addEventListener('DOMContentLoaded', () => {
     const ageVerification = document.getElementById('age-verification');
     const notEligible = document.getElementById('not-eligible');
     const welcome = document.getElementById('welcome');
     const input = document.getElementById('age-field');
-    const submit = document.getElementById('submit');
+    const submit = document.getElementById('form');
     const hasVerified = localStorage.getItem('ageVerified');
 
     if (!hasVerified) {
@@ -87,7 +87,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
         document.body.style.overflow = 'hidden'
     }
 
-    submit.addEventListener('click', () => {
+    submit.addEventListener('submit', (event) => {
+        event.preventDefault()
         if (input.value < 18 || input.value > 100) {
             notEligible.style.display = 'flex';
             ageVerification.style.display = 'none';
